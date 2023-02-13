@@ -223,10 +223,9 @@ function generateMarkdown(data) {
   ## Report Issues
   ${data.issues}
   ## How to Contribute
-  [Contributor Covenant](https://www.contributor-covenant.org/)  
-  ${data.contributing}
+  ${data.contribute}
   ## Tests
-  ${data.testing}
+  ${data.test}
   ## Questions?
   ### Reach me here: 
   [${data.username}](https://github.com/${data.username})  
