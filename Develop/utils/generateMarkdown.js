@@ -217,9 +217,11 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Installation
-  ${data.install}
+  ${data.installation}
   ## Usage
   ${data.usage}
+  ## Report Issues
+  ${data.issues}
   ## How to Contribute
   [Contributor Covenant](https://www.contributor-covenant.org/)  
   ${data.contributing}

@@ -1,27 +1,29 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs')
-const generateMD = require('./utils/generateMarkdown')
+const generateMD = require('./utils/generateMarkdown');
+const { type } = require('os');
 // TODO: Create an array of questions for user input
 function questions() {
     return inquirer.prompt([
 
     {name: 'description',
-        message: 'What does this application do?',
+        message: 'Give a brief description of what this project does:',
         type: 'input'
     },
-    {   
-        message: "What is a description of the project",
-        name: "input"
+    {name: "installation",
+        message: "How does your user install this application?",
+        type: 'input'
     },
-    {   
-        message: "How will this project be used?",
-        name: "input"
+    {name: "usage",
+        message: "How is this appliction used?",
+        type: "input"
     },
-    {   
-        message: "What licesnes are used?",
-        name: "input"
-    }
+
+    {name: "issues",
+    message: "How would a user report issues to you?",
+    type: "input"
+}
 ])};
 
 
