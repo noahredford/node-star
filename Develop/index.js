@@ -7,10 +7,16 @@ const { type } = require('os');
 function questions() {
     return inquirer.prompt([
 
+    {name: 'title',
+        message: 'What is the title of your project?',
+        type: 'input'
+    },
+
     {name: 'description',
         message: 'Give a brief description of what this project does:',
         type: 'input'
     },
+
     {name: "installation",
         message: "How does your user install this application?",
         type: 'input'
@@ -18,6 +24,16 @@ function questions() {
     {name: "usage",
         message: "How is this appliction used?",
         type: "input"
+    },
+
+    {name: "contribute",
+    message: "How can other developer's contribute to this project?",
+    type: "input"
+    },
+
+    {name: "test",
+    message: "How can the user test this application?",
+    type: "input"
     },
 
     {name: "issues",
