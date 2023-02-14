@@ -7,7 +7,7 @@ const { type } = require('os');
 function questions() {
     return inquirer.prompt([
 
-    {name: 'title',
+        {name: 'title',
         message: 'What is the title of your project?',
         type: 'input'
     },
@@ -26,20 +26,28 @@ function questions() {
         type: "input"
     },
 
-    {name: "contribute",
-    message: "How can other developer's contribute to this project?",
-    type: "input"
-    },
-
-    {name: "test",
-    message: "How can the user test this application?",
-    type: "input"
-    },
-
     {name: "issues",
     message: "How would a user report issues to you?",
     type: "input"
-}
+    },
+    {name: "contribute",
+    message: "How can another developer contribute to this project?",
+    type: "input"
+    },
+    {name: "testing",
+    message: "What tests have been done on the project?",
+    type: "input"
+    },
+    {name: "username",
+    message: "What is your github username?",
+    type: "input"
+    },
+    {name: "email",
+    message: "What is your email address?",
+    type: "input"
+    }
+
+
 ])};
 
 
