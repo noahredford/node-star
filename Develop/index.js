@@ -25,7 +25,6 @@ function questions() {
         message: "How is this appliction used?",
         type: "input"
     },
-
     {name: "issues",
     message: "How would a user report issues to you?",
     type: "input"
